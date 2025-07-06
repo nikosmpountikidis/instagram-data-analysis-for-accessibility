@@ -35,34 +35,58 @@ instagram-data-analysis-for-accessibility-main/
 
 ## Data Collection
 
-- Bright Data scraper: Fetches Instagram account metadata (followers, posts, captions) and raw alt text when available.
+- **Bright Data scraper**: Fetches Instagram account metadata (followers, posts, captions) and raw alt text when available.
 - Outputs are stored as JSON/CSV for downstream analysis.
 
 ## Accessibility Analysis & Scoring
 
-1. Alt Text Analysis (alt_text_analysis.ipynb):
+1. **Alt Text Analysis** (alt_text_analysis.ipynb):
     - Checks for presence of alt text on each post.
     - Analyzes length, keyword richness, and language.
 
-Attribute Scoring (scoring-each-attribute.ipynb):
+2. **Attribute Scoring** (scoring-each-attribute.ipynb):
+    - Computes normalized scores for:
+        - Alt Text Presence
+        - Hashtag Conventions (PascalCase, length, character variety)
+        - Description Readability (length, structure)
+        - Other metrics (e.g., emoji usage, links).
 
-Computes normalized scores for:
+## LLM-based Evaluation & Generation
 
-Alt Text Presence
+- **Hashtag Accessibility**: Uses prompt-based LLM calls to classify hashtags as Accessible/Inaccessible.
+- **Description Accessibility**: Prompts LLM to evaluate or propose improvements to post descriptions for readability and clarity.
 
-Hashtag Conventions (PascalCase, length, character variety)
+Both workflows include sample code and instructions for batched API calls.
 
-Description Readability (length, structure)
+##Model Fine-tuning
 
-Other metrics (e.g., emoji usage, links).
+- **Hashtags**: Fine-tune a multilingual transformer (e.g., XLM-R) on training-data/hashtag-data.csv.
+- **Descriptions**: Fine-tune for classification/regression on training-data/description-data.csv.
 
+## Model Fine-tuning
 
+- **Hashtags**: Fine-tune a multilingual transformer (e.g., XLM-R) on training-data/hashtag-data.csv.
+- **Descriptions**: Fine-tune for classification/regression on training-data/description-data.csv.
 
+Notebooks provide:
+- Data preprocessing and tokenization.
+- Training loops with LoRA/PEFT for efficient adaptation.
+- Evaluation metrics and model saving/loading.
 
+## Training Data
 
+- **`training-data/hashtag-data.csv`**: Sample of hashtags labelled 1=accessible, 0=inaccessible.
+- **`training-data/description-data.csv`**: Post descriptions labelled similarly for training the description classifier.
 
+## How to Use
 
+1. Run data collection to update raw datasets.
+2. Execute analysis notebooks in order (alt_text, then scoring).
+3. Use LLM evaluation notebooks to classify or generate accessible text.
+4. Fine-tune models with your updated training data if needed.
+5. Integrate into your pipeline or dashboard for ongoing accessibility monitoring.
 
+## License
 
-
+This project is licensed under the MIT License.
    
