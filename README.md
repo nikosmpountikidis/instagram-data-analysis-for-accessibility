@@ -9,31 +9,21 @@ A comprehensive workflow and toolkit for analyzing Instagram accounts and posts 
 
 ## Repository Structure
 
+```text
 instagram-data-analysis-for-accessibility-main/
-
 ├── LICENSE
-
 ├── README.md
-
-├── get-data-through-bright-data.ipynb
-
 ├── alt_text_analysis.ipynb
-
-├── fine_tune_LLM_for_descriptions.ipynb
-
-├── fine-tune-LLM-for-hashtags.ipynb
-
-├── use-LLM-for-descriptions.ipynb
-
-├── use-LLM-for-hashtags.ipynb
-
+├── get-data-through-bright-data.ipynb
 ├── scoring-each-attribute.ipynb
-
+├── use-LLM-for-hashtags.ipynb
+├── use-LLM-for-descriptions.ipynb
+├── fine-tune-LLM-for-hashtags.ipynb
+├── fine_tune_LLM_for_descriptions.ipynb
 └── training-data/
-    
     ├── hashtag-data.csv
-    
     └── description-data.csv
+```
 
 `**get-data-through-bright-data.ipynb**`: Workflow for scraping Instagram posts and account details via Bright Data.
 
