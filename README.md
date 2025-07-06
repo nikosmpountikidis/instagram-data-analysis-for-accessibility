@@ -10,6 +10,7 @@ A comprehensive workflow and toolkit for analyzing Instagram accounts and posts 
 ## Repository Structure
 
 instagram-data-analysis-for-accessibility-main/
+
 ├── LICENSE
 ├── README.md
 ├── get-data-through-bright-data.ipynb
