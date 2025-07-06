@@ -33,20 +33,28 @@ instagram-data-analysis-for-accessibility-main/
 - **`fine-tune-LLM-for-hashtags.ipynb`**: End-to-end fine-tuning pipeline for a multilingual model on the training-data/hashtag-data.csv labelled dataset (accessible vs. inaccessible hashtags).
 - **`fine_tune_LLM_for_descriptions.ipynb`**: Fine-tuning pipeline for post descriptions using training-data/description-data.csv.
 
-## Setup & Requirements
+## Data Collection
 
-1. Clone the repo
-   ```text
-    git clone https://github.com/nikosmpountikidis/instagram-data-analysis-for-accessibility.git
-    cd instagram-data-analysis-for-accessibility
-    ```
+- Bright Data scraper: Fetches Instagram account metadata (followers, posts, captions) and raw alt text when available.
+- Outputs are stored as JSON/CSV for downstream analysis.
 
+## Accessibility Analysis & Scoring
 
+1. Alt Text Analysis (alt_text_analysis.ipynb):
+    - Checks for presence of alt text on each post.
+    - Analyzes length, keyword richness, and language.
 
+Attribute Scoring (scoring-each-attribute.ipynb):
 
+Computes normalized scores for:
 
+Alt Text Presence
 
+Hashtag Conventions (PascalCase, length, character variety)
 
+Description Readability (length, structure)
+
+Other metrics (e.g., emoji usage, links).
 
 
 
