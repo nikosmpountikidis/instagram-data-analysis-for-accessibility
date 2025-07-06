@@ -30,7 +30,9 @@ instagram-data-analysis-for-accessibility-main/
 ├── scoring-each-attribute.ipynb
 
 └── training-data/
+    
     ├── hashtag-data.csv
+    
     └── description-data.csv
 
 `**get-data-through-bright-data.ipynb**`: Workflow for scraping Instagram posts and account details via Bright Data.
