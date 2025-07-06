@@ -6,3 +6,6 @@ A comprehensive workflow and toolkit for analyzing Instagram accounts and posts 
 * Analyze alt text and post metadata to gauge accessibility compliance.
 * Score key accessibility attributes, including alt text presence, readability, and hashtag conventions.
 * Use and fine-tune language models for automated evaluation and generation of accessible hashtags and descriptions.
+
+## Repository Structure
+
