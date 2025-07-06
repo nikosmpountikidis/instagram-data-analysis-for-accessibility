@@ -23,7 +23,7 @@ instagram-data-analysis-for-accessibility-main/
     ├── hashtag-data.csv
     └── description-data.csv
 
-'**get-data-through-bright-data.ipynb**': Workflow for scraping Instagram posts and account details via Bright Data.
+`**get-data-through-bright-data.ipynb**`: Workflow for scraping Instagram posts and account details via Bright Data.
 
 alt_text_analysis.ipynb: Analysis of alternative text (alt text) presence and characteristics for each post.
 
