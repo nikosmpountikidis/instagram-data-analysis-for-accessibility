@@ -32,3 +32,29 @@ instagram-data-analysis-for-accessibility-main/
 - **`use-LLM-for-descriptions.ipynb`**: Uses an LLM to assess or generate accessible post descriptions.
 - **`fine-tune-LLM-for-hashtags.ipynb`**: End-to-end fine-tuning pipeline for a multilingual model on the training-data/hashtag-data.csv labelled dataset (accessible vs. inaccessible hashtags).
 - **`fine_tune_LLM_for_descriptions.ipynb`**: Fine-tuning pipeline for post descriptions using training-data/description-data.csv.
+
+## Setup & Requirements
+
+1. Clone the repo
+   ```text
+    git clone https://github.com/nikosmpountikidis/instagram-data-analysis-for-accessibility.git
+    cd instagram-data-analysis-for-accessibility
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
